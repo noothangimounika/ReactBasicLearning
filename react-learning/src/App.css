@@ -1,4 +1,17 @@
 body{
-  border: 2px rgb(0, 0, 0) solid;
+  border: 2px rgb(11, 223, 11) solid;
   padding: 10px;
+  color: rgb(1, 1, 20);
+  font-weight: 500;
+}
+.HookUseState-Container input{
+  width: 500px;
+  height: 40px;
+  color: 20px;
+  font-size: 20px;
+}
+.ToggleUseState-Container {
+  margin-top: 30px;
+  color: rgb(243, 10, 49);
+  font-size: 20px;
 }
