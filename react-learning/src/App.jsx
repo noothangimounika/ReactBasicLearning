@@ -1,36 +1,36 @@
 import './App.css';
 
 import React from 'react'
-import CurdOperationComponent from './CurdOperationComponent';
-import FetchDataComp from './FetchDataComp';
-// import HookUseState from './statemanagement/HookUseState';
-// import CouterUseStateHook from './statemanagement/CouterUseStateHook';
-// import ToggleUseState from './statemanagement/ToggleUseState';
-// import ItemListUseStateHook from './statemanagement/ItemListUseStateHook';
-// import DesctruingComp from './propsDestructuring/DesctruingComp';
-// import Apple from './Apple';
-// import NestedCompoent from './exampleCompoent/NestedCompoent';
-// import PraticeMap from './exampleCompoent/PraticeMap';
-// import ContainerForProps from './propsContainer/ContainerForProps';
+import Firstcomp from './routerComponets/Firstcomp';
+import SecondComp from './routerComponets/SecondComp';
+import ThordComp from './routerComponets/ThordComp';
+import FourthComp from './routerComponets/FourthComp';
+import { Routes,Route } from 'react-router';
+
+import NavBarComp from './NavBarComp';
+
+
 
 
 
 const App = () => {
   return (
     <div>
-      {/* <Apple />
-      <NestedCompoent />
-      <PraticeMap /> */}
-      {/* <ContainerForProps />
 
-      <DesctruingComp />
 
-      <HookUseState />
-      <CouterUseStateHook />
-      <ToggleUseState />
-      <ItemListUseStateHook /> */}
-      <CurdOperationComponent />
-      <FetchDataComp />
+        <NavBarComp />
+       
+        <Routes>
+          <Route path="/" element={ <Firstcomp />} />
+          <Route path='/about' element={ <SecondComp />} />
+          <Route path='/blog' element={<ThordComp />} />
+          <Route path='/contact' element={<FourthComp />} />
+        </Routes>
+       
+       
+       
+
+
     </div>
   )
 }
